@@ -157,7 +157,7 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                                         <?php
                                         if ($data_d['status_peminjaman'] == '0') {
                                         ?>
-                                            <a href="" class="btn btn-primary btn-sm">Proses</a>
+                                            <a onclick="return confirm('Apakah anda yakin?')" href="page/proses_peminjaman.php?id_peminjaman=<?= $data_d['id_peminjaman'] ?>" class="btn btn-primary btn-sm">Proses</a>
                                         <?php
                                         }
                                         ?>
