@@ -66,25 +66,11 @@
                         } else {
                             ?>
                             <tr>
-                                <td colspan="9">Tidak Ada Data</td>
+                                <td colspan="9" class="text-center">Tidak Ada Data</td>
                             </tr>
                         <?php
                         }
                         ?>
-                        <!-- <tr>
-                            <td>1</td>
-                            <td>25-03-2023</td>
-                            <td>Previan</th>
-                            <td>Laptop</th>
-                            <td>5</th>
-                            <td>30-03-2023</th>
-                            <td>
-                                <div class="badge bg-warning">Dipinjam</div>
-                            </td>
-                            <td>
-                                <a href="?p=detail_pengembalian" class="btn btn-sm btn-primary">Konfirmasi</a>
-                            </td>
-                        </tr> -->
                     </tbody>
                 </table>
             </div>

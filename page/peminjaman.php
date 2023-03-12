@@ -148,7 +148,7 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                                         <?php
                                         } else {
                                         ?>
-                                            <div class="badge bg-success">Konfirmasi</div>
+                                            <div class="badge bg-success">Dikembalikan</div>
                                         <?php
                                         }
                                         ?>
@@ -167,24 +167,6 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                             }
                         }
                         ?>
-
-                        <!-- <tr>
-                            <td>1</td>
-                            <td>PMJ000</td>
-                            <td>25-03-2023</td>
-                            <td>Andika</td>
-                            <td>Laptop</td>
-                            <td>5</td>
-                            <td>28-03-2023</td>
-                            <td>
-                                <div class="badge bg-danger">Belum</div>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-sm btn-primary">
-                                    Proses
-                                </button>
-                            </td>
-                        </tr> -->
                     </tbody>
                 </table>
             </div>
