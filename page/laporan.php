@@ -44,15 +44,15 @@ $hari_ini = date('y-m-d');
                         @$tglSampai = $_GET['tglSampai'];
 
                         if (!empty($tglDari)) {
-                            $search .= "and date(tanggal_pinjam) >= '" . $tglDari . "' ";
+                            $search .= "and tanggal_pinjam >= '" . $tglDari . "' ";
                         }
 
                         if (!empty($tglSampai)) {
-                            $search .= "and date(tanggal_pinjam) <= '" . $tglSampai . "' ";
+                            $search .= "and tanggal_pinjam <= '" . $tglSampai . "' ";
                         }
 
-                        if (empty($tglDari) && ($tglSampai)) {
-                            $search .= "and date(tanggal_pinjam) >= '" . $hari_ini . "' and tanggal_pinjam <= '" . $hari_ini . "'";
+                        if (empty($tglDari) && empty($tglSampai)) {
+                            $search .= "and tanggal_pinjam >='" . $hari_ini . "' and tanggal_pinjam >= '" . $hari_ini . "'";
                         }
 
                         $sql = "SELECT *, detail_pinjam.jumlah as jml FROM detail_pinjam LEFT JOIN peminjaman ON peminjaman.id_peminjaman = detail_pinjam.id_peminjaman LEFT JOIN inventaris on inventaris.id_inventaris = detail_pinjam.id_inventaris LEFT JOIN pegawai ON pegawai.id_pegawai = peminjaman.id_pegawai WHERE 1=1 $search";
