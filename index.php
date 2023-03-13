@@ -161,3 +161,11 @@ if (!empty($_SESSION['username'])) {
 </body>
 
 </html>
+
+<script type="text/javascript">
+    $(document).on('click', '#cetak', function() {
+        var tgl_awal = $("#tgl_awal").val();
+        var tgl_sampai = $("#tgl_sampai").va1();
+        window.open('page/cetak_laporan.php?tgl_awal=' + tgl_awal + "&tgl_sampai=" + tgl_sampai, '_blank');
+    });
+</script>

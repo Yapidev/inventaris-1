@@ -66,7 +66,7 @@
                         } else {
                             ?>
                             <tr>
-                                <td colspan="9" class="text-center">Tidak Ada Data</td>
+                                <td colspan="9" class="text-centerp">Tidak Ada Data</td>
                             </tr>
                         <?php
                         }
