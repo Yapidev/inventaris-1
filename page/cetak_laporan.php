@@ -48,9 +48,9 @@ $hari_ini = date('y-m-d');
                             $search .= "and tanggal_pinjam <= '" . $tgl_sampai . "' ";
                         }
 
-                        if (empty($tgl_awal) && empty($tgl_sampai)) {
-                            $search .= "and tanggal_pinjam >= '" . $hari_ini . "' and tanggal_pinjam <= '" . $hari_ini . "'";
-                        }
+                        // if (empty($tgl_awal) && empty($tgl_sampai)) {
+                        //     $search .= "and tanggal_pinjam >= '" . $hari_ini . "' and tanggal_pinjam <= '" . $hari_ini . "'";
+                        // }
 
                         $sql = "SELECT *, detail_pinjam.jumlah as jml FROM detail_pinjam LEFT JOIN peminjaman ON peminjaman.id_peminjaman = detail_pinjam.id_peminjaman LEFT JOIN inventaris on inventaris.id_inventaris = detail_pinjam.id_inventaris LEFT JOIN pegawai ON pegawai.id_pegawai = peminjaman.id_pegawai WHERE 1=1 $search";
 
