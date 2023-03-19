@@ -131,7 +131,7 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                                 <tr>
                                     <td><?= $no++ ?></td>
                                     <td><?= $data_d['id_peminjaman'] ?></td>
-                                    <td><?= $hari ?></td>
+                                    <td><?= $data_d['tanggal_pinjam'] ?> </td>
                                     <td><?= $data_d['nama_pegawai'] ?></td>
                                     <td><?= $data_d['nama'] ?></td>
                                     <td><?= $data_d['jml'] ?></td>
