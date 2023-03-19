@@ -2,8 +2,8 @@
 session_start();
 include "config/koneksi.php";
 if (!empty($_SESSION['username'])) {
-    $user = $_SESSION['username'];
-    $level = $_SESSION['level'];
+    @$user = $_SESSION['username'];
+    @$level = $_SESSION['level'];
 }
 ?>
 
@@ -22,7 +22,6 @@ if (!empty($_SESSION['username'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -105,44 +104,47 @@ if (!empty($_SESSION['username'])) {
 
             @$p = $_GET['p'];
             switch ($p) {
-
-                case 'login';
+                case 'login':
                     include "page/login.php";
                     break;
 
-                case 'list_barang';
+                case 'list_barang':
                     include "page/list_barang.php";
                     break;
 
-                case 'tambah_barang';
+                case 'tambah_barang':
                     include "page/tambah_barang.php";
                     break;
 
-                case 'edit_barang';
+                case 'edit_barang':
                     include "page/edit_barang.php";
                     break;
 
-                case 'peminjaman';
+                case 'peminjaman':
                     include "page/peminjaman.php";
                     break;
 
-                case 'pengembalian';
+                case 'peminjaman1':
+                    include "page/peminjaman1.php";
+                    break;
+
+                case 'pengembalian':
                     include "page/pengembalian.php";
                     break;
 
-                case 'detail_pengembalian';
-                    include "page/detail_peminjaman.php";
+                case 'detail_pengembalian':
+                    include "page/detail_pengembalian.php";
                     break;
 
-                case 'laporan';
+                case 'laporan':
                     include "page/laporan.php";
                     break;
 
-                case 'home';
+                case 'home':
                     include "page/home.php";
                     break;
 
-                case 'hapus';
+                case 'hapus':
                     include "page/hapus.php";
                     break;
 
@@ -154,14 +156,14 @@ if (!empty($_SESSION['username'])) {
             include "page/login.php";
         }
         ?>
-    </div>
 
+    </div>
     <!-- end content -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
 <script type="text/javascript">
     $(document).on('click', '#cetak', function() {
         var tgl_awal = $("#tgl_awal").val();
