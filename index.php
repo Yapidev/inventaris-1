@@ -70,7 +70,7 @@ if (!empty($_SESSION['username'])) {
                     if (@$level == "3") {
                     ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="?p=peminjaman">Peminjaman</a>
+                            <a class="nav-link" href="?p=peminjaman1">Peminjaman</a>
                         </li>
                     <?php
                     }
