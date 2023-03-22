@@ -58,7 +58,7 @@
                                         ?>
                                     </td>
                                     <td>
-                                        <a href="?p=detail_pengembalian&id_peminjaman=<?= $data_d['id_peminjaman'] ?>" class="btn btn-sm btn-primary">Proses</a>
+                                        <a href="?p=detail_peminjaman&id_peminjaman=<?= $data_d['id_peminjaman'] ?>" class="btn btn-sm btn-primary">Proses</a>
                                     </td>
                                 </tr>
                             <?php
