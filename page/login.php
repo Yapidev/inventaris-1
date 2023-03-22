@@ -9,7 +9,7 @@ if (!empty($user)) {
 ?>
 
 <div class="login_page">
-    <div class="row vh-100 justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center">
         <div class="col-md-6 col-lg-4 animate-login">
             <div class="card">
                 <div class="card-header">
@@ -61,13 +61,13 @@ if (!empty($user)) {
                             }
                             ?>
                         </div>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" name="username" placeholder="username" required>
+                            <label for="floatingInput">Username</label>
                         </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingInput" name="password" placeholder="password" required>
+                            <label for="floatingInput" class="form-label">Password</label>
                         </div>
                         <button type="submit" class="btn btn-primary" name="login">Login</button>
                     </form>
