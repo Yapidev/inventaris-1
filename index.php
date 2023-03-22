@@ -132,8 +132,8 @@ if (!empty($_SESSION['username'])) {
                     include "page/pengembalian.php";
                     break;
 
-                case 'detail_pengembalian':
-                    include "page/detail_pengembalian.php";
+                case 'detail_peminjaman':
+                    include "page/detail_peminjaman.php";
                     break;
 
                 case 'laporan':
