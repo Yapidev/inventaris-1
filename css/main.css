@@ -31,3 +31,8 @@ body {
   font-weight: 500;
   color: #f4f4f4;
 }
+
+/* login_page */
+.login_page {
+  padding-top: 100px;
+}
