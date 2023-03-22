@@ -63,28 +63,27 @@ if ($test > 0) {
                 }
                 ?>
                 <form action="" method="post">
-                    <div class="mb-3">
-                        <label for="kd_inventaris" class="form-label">Kode Inventaris</label>
+                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="kode_inventaris" id="kd_inventaris" value="<?= $data['kode_inventaris'] ?>">
+                        <label for="kd_inventaris" class="form-label">Kode Inventaris</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="nm_inventaris" class="form-label">Nama Inventaris</label>
+                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="nama" id="nm_inventaris" value="<?= $data['nama'] ?>">
+                        <label for="nm_inventaris" class="form-label">Nama Inventaris</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="barang" class="form-label">Kondisi</label>
+                    <div class="form-floating mb-3">
                         <select class="form-select" name="kondisi" aria-label="">
                             <option name="kondisi" value="<?= $data['kondisi'] ?>"> <?= $data['kondisi'] ?> </option>
                             <option name="kondisi" value="Baik">Baik</option>
                             <option name="kondisi" value="Buruk">Buruk</option>
                         </select>
+                        <label for="barang" class="form-label">Kondisi</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="qty" class="form-label">Jumlah</label>
+                    <div class="form-floating mb-3">
                         <input type="number" class="form-control" name="jumlah" id="qty" value="<?= $data['jumlah'] ?>">
+                        <label for="qty" class="form-label">Jumlah</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="jenis" class="form-label">Jenis Inventaris</label>
+                    <div class="form-floating mb-3">
                         <select name="id_jenis" id="jenis" class="form-select">
                             <option value="<?= $data['id_jenis'] ?>"> <?= $data['nama_jenis'] ?> </option>
                             <?php
@@ -97,9 +96,9 @@ if ($test > 0) {
                             }
                             ?>
                         </select>
+                        <label for="jenis" class="form-label">Jenis Inventaris</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="ruang" class="form-label">Nama Ruang</label>
+                    <div class="form-floating mb-3">
                         <select name="id_ruang" id="ruang" class="form-select">
                             <option value="<?= $data['id_ruang'] ?>"> <?= $data['nama_ruang'] ?> </option>
                             <?php
@@ -112,10 +111,11 @@ if ($test > 0) {
                             }
                             ?>
                         </select>
+                        <label for="ruang" class="form-label">Nama Ruang</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="keterangan" class="form-label">Keterangan</label>
+                    <div class="form-floating mb-3">
                         <textarea class="form-control" name="ket" id="keterangan" value="<?= $data['ket'] ?>"><?= $data['ket'] ?></textarea>
+                        <label for="keterangan" class="form-label">Keterangan</label>
                     </div>
                     <div class="mb-3">
                         <button class="button btn btn-primary" name="save" type="submit">Save</button>

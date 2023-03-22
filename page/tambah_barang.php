@@ -46,28 +46,27 @@
                 ?>
 
                 <form action="" method="post">
-                    <div class="mb-3">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="kode_inventaris" id="kd_barang" placeholder="Kode Inventaris">
                         <label for="kd_barang" class="form-label">Kode Inventaris</label>
-                        <input type="text" class="form-control" name="kode_inventaris" id="kd_barang">
                     </div>
-                    <div class="mb-3">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="nama" id="nm_barang" placeholder="Nama Barang">
                         <label for="nm_barang" class="form-label">Nama Barang</label>
-                        <input type="text" class="form-control" name="nama" id="nm_barang">
                     </div>
-                    <div class="mb-3">
-                        <label for="kondisi" class="form-label">Kondisi</label>
+                    <div class="form-floating mb-3">
                         <select class="form-select" name="kondisi" aria-label="">
                             <option name="kondisi" selected>Pilih</option>
                             <option name="kondisi" value="Baik">Baik</option>
                             <option name="kondisi" value="Rusak">Rusak</option>
                         </select>
+                        <label for="kondisi" class="form-label">Kondisi</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="form-floating mb-3">
+                        <input type="number" name="jumlah" class="form-control" id="jumlah" placeholder="Jumlah">
                         <label for="jumlah" class="form-label">Jumlah</label>
-                        <input type="number" name="jumlah" class="form-control" id="jumlah">
                     </div>
-                    <div class="mb-3">
-                        <label for="jenis" class="form-label">Jenis Inventaris</label>
+                    <div class="form-floating mb-3">
                         <select name="id_jenis" id="jenis" class="form-select">
                             <option name="" selected>Pilih</option>
                             <?php
@@ -80,9 +79,9 @@
                             }
                             ?>
                         </select>
+                        <label for="jenis" class="form-label">Jenis Inventaris</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="ruang" class="form-label">Nama Ruang</label>
+                    <div class="form-floating mb-3">
                         <select name="id_ruang" id="ruang" class="form-select">
                             <option name="" selected>Pilih</option>
                             <?php
@@ -95,10 +94,11 @@
                             }
                             ?>
                         </select>
+                        <label for="ruang" class="form-label">Nama Ruang</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="ket" class="form-label">Keterangan</label>
+                    <div class="form-floating mb-3">
                         <textarea class="form-control" name="keterangan" placeholder="Keterangan" id="ket"></textarea>
+                        <label for="ket" class="form-label">Keterangan</label>
                     </div>
                     <div class="mb-3 visually-hidden">
                         <label for="petugas" class="form-label">Jumlah</label>

@@ -42,29 +42,29 @@ $data = mysqli_fetch_array($d_query)
             }
             ?>
             <form action="" method="post">
-                <div class="mb-3">
-                    <label for="" class="form-label">Kode Peminjaman</label>
+                <div class="form-floating mb-3">
                     <input type="text" name="id_peminjaman" class="form-control" value="<?= $data['id_peminjaman'] ?>" readonly>
+                    <label for="" class="form-label">Kode Peminjaman</label>
                 </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Tanggal Peminjaman</label>
+                <div class="form-floating mb-3">
                     <input type="text" name="tgl_pinjam" class="form-control" value="<?= $hari ?>" readonly>
+                    <label for="" class="form-label">Tanggal Peminjaman</label>
                 </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Nama Peminjam</label>
+                <div class="form-floating mb-3">
                     <input type="text" name="nama_pegawai" class="form-control" value="<?= $data['nama_pegawai'] ?>" readonly>
+                    <label for="" class="form-label">Nama Peminjam</label>
                 </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Nama Barang</label>
+                <div class="form-floating mb-3">
                     <input type="text" name="nama" class="form-control" value="<?= $data['nama'] ?>" readonly>
+                    <label for="" class="form-label">Nama Barang</label>
                 </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Jumlah</label>
+                <div class="form-floating mb-3">
                     <input type="number" name="jml" class="form-control" value="<?= $data['jml'] ?>" readonly>
+                    <label for="" class="form-label">Jumlah</label>
                 </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Tanggal Pengembalian</label>
+                <div class="form-floating mb-3">
                     <input type="date" name="tgl_kembali" class="form-control">
+                    <label for="" class="form-label">Tanggal Pengembalian</label>
                 </div>
                 <div class="mb-3">
                     <button type="submit" name="save" class="btn btn-md btn-primary">Simpan</button>

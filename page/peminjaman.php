@@ -50,12 +50,11 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                 }
                 ?>
                 <form action="" method="post">
-                    <div class="mb-3">
-                        <label for="kd_pinjam" class="form-label">Kode Peminjaman</label>
+                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" name="id_peminjaman" value="<?= $kodePeminjaman ?>" id="kd_pinjam" readonly>
+                        <label for="kd_pinjam" class="form-label">Kode Peminjaman</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="nama_pinjam" class="form-label">Nama Peminjam</label>
+                    <div class="form-floating mb-3">
                         <select name="id_pegawai" class="form-select">
                             <option selected>Nama Pegawai</option>
                             <?php
@@ -68,9 +67,9 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                             }
                             ?>
                         </select>
+                        <label for="nama_pinjam" class="form-label">Nama Peminjam</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="barang" class="form-label">Pilih Barang</label>
+                    <div class="form-floating mb-3">
                         <select name="id_inventaris" id="barang" class="form-select">
                             <option selected>Nama Barang</option>
                             <?php
@@ -83,10 +82,11 @@ $kodePeminjaman = $char . sprintf("%03s", $noUrut);
                             }
                             ?>
                         </select>
+                        <label for="barang" class="form-label">Pilih Barang</label>
                     </div>
-                    <div class="mb-3">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" name="jumlah" id="qty" placeholder="Jumlah">
                         <label for="qty" class="form-label">Jumlah</label>
-                        <input type="number" class="form-control" name="jumlah" id="qty">
                     </div>
                     <div class="mb-3">
                         <button class="btn btn-primary" name="save">Simpan</button>
